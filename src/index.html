@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #texto {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
 
 </head>
 <body>
@@ -11,5 +22,18 @@
   <p>akiofjswdiogvhdwiogv</p>
 
   <iframe allow="autoplay; encrypted-media" muted=1 width="962" height="541" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ <div id="texto">Esperando actualización...</div>
+
+    <script>
+        function actualizarTexto() {
+            let fecha = new Date();
+            document.getElementById("texto").innerText = "Evan Gay";
+        }
+
+        setInterval(actualizarTexto, 1000); // Ejecuta la función cada segundo
+    </script>
+
+
 </body>
 </html>
